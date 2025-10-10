@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+/* --- Custom Professional Scrollbar --- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6; /* light gray track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #155DFC; /* your brand blue */
+  border-radius: 10px;
+  border: 2px solid #f3f4f6; /* space effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0b47c2; /* darker on hover */
+}
+
+/* Optional: for horizontal scrollbar (if needed) */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
