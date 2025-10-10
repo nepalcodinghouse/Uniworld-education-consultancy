@@ -202,8 +202,8 @@ function Home() {
       </section>
 
       {/* 📘 Accordion FAQ Section */}
-      <section className="max-w-5xl mx-auto mt-24 bg-white p-8 md:p-12 rounded-xl shadow-lg">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-[#155DFC]">
+      <section className="max-w-5xl mx-auto mt-24 bg-white p-8 md:p-12 ">
+        <h2 className="text-3xl md:text-4xl font-bold text-left mb-8 text-[#1b1b1b]">
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">

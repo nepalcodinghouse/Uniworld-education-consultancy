@@ -45,7 +45,7 @@ function Navbar() {
           ))}
           <button
             onClick={handleGetStarted}
-            className="bg-[#155DFC] hover:bg-blue-700 text-white px-5 py-2 rounded-full transition duration-200"
+            className="bg-[#155DFC] cursor-pointer hover:bg-blue-700 text-white px-5 py-2 rounded-full transition duration-200"
           >
             Get Started
           </button>
@@ -75,7 +75,7 @@ function Navbar() {
           ))}
           <button
             onClick={handleGetStarted}
-            className="mt-2 bg-white text-[#155DFC] font-semibold rounded-full px-5 py-2 hover:bg-gray-100 transition duration-200"
+            className="mt-2 cursor-pointer bg-white text-[#155DFC] font-semibold rounded-full px-5 py-2 hover:bg-gray-100 transition duration-200"
           >
             Get Started
           </button>
