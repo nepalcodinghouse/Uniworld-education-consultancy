@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Sparkle from "../assets/sprakles.png";
 import Students from "../assets/students.png";
+import VoiceOfManagingDirector from "../components/VoiceOfManagingDirector";
 import {
   GraduationCap,
   Award,
@@ -235,6 +236,8 @@ function Home() {
         </div>
       </section>
 
+      <VoiceOfManagingDirector />
+
       {/* 📍 Contact Section */}
       <section className="text-center mt-24 mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
@@ -273,6 +276,7 @@ function Home() {
         </div>
       </section>
 
+         
       {/* 📤 Contact Form */}
       <section className="max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-8 md:p-12">
         <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">

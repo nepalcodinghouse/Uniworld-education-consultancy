@@ -9,9 +9,12 @@ function Navbar() {
   // ✅ Centralized navigation items
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Classes', path: '/classes' },
-    { name: 'Courses', path: '/courses' },
-    { name: 'Blog', path: '/blog' },
+    {name: 'About', path: '/about'},
+    {name: 'Gallery', path: '/gallery'},
+    // { name: 'Classes', path: '/classes' },
+    // { name: 'Courses', path: '/courses' },
+    // { name: 'Blog', path: '/blog' },
+    {name: 'Study Abroad', path: '/study-abroad'},
     { name: 'Contact', path: '/contact' },
   ]
 
