@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Classes from './pages/Classes'
@@ -14,6 +15,7 @@ import ScrollToTop from './components/ScrollToTop'
 import StudyAbroad from './pages/StudyAbroad'
 import About from './pages/About'
 import Gallery from './pages/Gallery'
+import Queries from './pages/Queries'
 import './App.css'
 
 function Layout() {
@@ -37,6 +39,7 @@ function Layout() {
         <Route path="/study-abroad" element={<StudyAbroad />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/submit-queries" element={<Queries />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
 
@@ -47,9 +50,11 @@ function Layout() {
 
 function App() {
   return (
-    <Router>
-      <Layout />
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <Layout />
+      </Router>
+    </HelmetProvider>
   )
 }
 

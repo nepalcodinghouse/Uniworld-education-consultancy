@@ -1,24 +1,25 @@
 import React from "react";
 import MD from "../assets/owner.png";
+import "./VoiceOfManagingDirector.css";
 
 function VoiceOfManagingDirector() {
   return (
-    <section className="w-full min-h-screen flex flex-col justify-center px-8 py-24 bg-white text-black">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+    <section className="w-full min-h-screen flex flex-col justify-center px-4 sm:px-8 py-16 sm:py-24 bg-white text-black">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
         {/* Left Side - Text */}
-        <div className="text-left space-y-8 leading-relaxed">
+        <div className="text-left space-y-6 sm:space-y-8 leading-relaxed">
           {/* Title */}
-          <h2 className="text-5xl md:text-4xl font-extrabold text-black mb-6 border-l-8 border-red-600 pl-6 animate-slide-in">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black mb-4 sm:mb-6 border-l-4 sm:border-l-8 border-red-600 pl-4 sm:pl-6">
             Voice of Managing Director / Founder
           </h2>
 
           {/* Greeting */}
-          <p className="text-2xl md:text-2xl font-semibold text-black mb-4">
+          <p className="text-xl sm:text-2xl font-semibold text-black mb-4">
             NAMASTE / KONICHIWA,
           </p>
 
           {/* Message */}
-          <div className="space-y-4 text-lg md:text-xl text-gray-900">
+          <div className="space-y-4 text-base sm:text-lg lg:text-xl text-gray-900">
             <p>
               Uniworld Educational Consultancy is a leading language institution in Kathmandu, dedicated to excellence in education and career guidance. We have decades of experience in helping students achieve their dreams, and we ensure professional services for the most efficient outcomes.
             </p>
@@ -45,20 +46,20 @@ function VoiceOfManagingDirector() {
           </div>
 
           {/* Signature */}
-          <div className="pt-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-black">
+          <div className="pt-6 sm:pt-8">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-black">
               — Managing Director / Founder
             </h3>
-            <p className="text-lg md:text-xl font-medium text-gray-800">Mr. Yuvraj Shahi</p>
+            <p className="text-base sm:text-lg lg:text-xl font-medium text-gray-800">Mr. Yuvraj Shahi</p>
           </div>
         </div>
 
         {/* Right Side - MD Image */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center lg:justify-end">
           <img
             src={MD}
             alt="Managing Director"
-            className="w-96 h-[28rem] object-cover rounded-xl shadow-2xl border-4 border-black hover:scale-110 transition-transform duration-500"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-64 sm:h-80 md:h-96 object-cover rounded-xl shadow-2xl border-2 sm:border-4 border-black hover:scale-105 transition-transform duration-500"
           />
         </div>
       </div>

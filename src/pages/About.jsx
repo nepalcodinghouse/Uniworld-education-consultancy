@@ -1,14 +1,31 @@
 import React from "react";
+import { Helmet } from 'react-helmet-async';
 import MD from "../assets/owner.png"; // Managing Director
 import CEO from "../assets/ceo.png"; // CEO image
 
 function AboutUs() {
   return (
-    <section className="w-full bg-gray-50 text-gray-900 px-8 py-24">
+    <div>
+      <Helmet>
+        <title>About Uniworld Education Consultancy | Leading Study Abroad Experts in Nepal</title>
+        <meta name="description" content="Learn about Uniworld Educational Consultancy, Nepal's leading education consultancy providing expert guidance for studying abroad. Discover our mission, vision, and core values." />
+        <meta name="keywords" content="education consultancy, study abroad, nepal, university admission, scholarship, visa services, career counseling, about us, mission, vision" />
+        <meta property="og:title" content="About Uniworld Education Consultancy | Leading Study Abroad Experts in Nepal" />
+        <meta property="og:description" content="Learn about Uniworld Educational Consultancy, Nepal's leading education consultancy providing expert guidance for studying abroad. Discover our mission, vision, and core values." />
+        <meta property="og:image" content="/og-image-about.jpg" />
+        <meta property="og:url" content="https://www.uniworldnepal.com/about" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Uniworld Education Consultancy | Leading Study Abroad Experts in Nepal" />
+        <meta name="twitter:description" content="Learn about Uniworld Educational Consultancy, Nepal's leading education consultancy providing expert guidance for studying abroad. Discover our mission, vision, and core values." />
+        <meta name="twitter:image" content="/og-image-about.jpg" />
+        <link rel="canonical" href="https://www.uniworldnepal.com/about" />
+      </Helmet>
+      <section className="w-full bg-gray-50 text-gray-900 px-8 py-24">
       <div className="max-w-7xl mx-auto space-y-24">
         {/* Hero Section */}
         <div className="text-center space-y-6">
-          <h1 className="text-5xl md:text-6xl font-extrabold border-b-4 border-gray-900 inline-block pb-3">
+          <h1 className="text-5xl md:text-6xl font-extrabold  border-gray-900 inline-block pb-3">
             About Uniworld Educational Consultancy
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
@@ -23,7 +40,7 @@ function AboutUs() {
             <img
               src={CEO}
               alt="CEO"
-              className="w-64 h-80 object-cover rounded-xl shadow-2xl border-4 border-gray-900 mx-auto mb-4"
+              className="w-64 h-80 object-cover rounded-xl shadow-2xl  border-gray-900 mx-auto mb-4"
             />
             <h3 className="text-xl font-bold text-gray-900">Mr. Rajesh Koirala</h3>
             <p className="text-gray-700 font-medium">Principal and founder</p>
@@ -34,7 +51,7 @@ function AboutUs() {
             <img
               src={MD}
               alt="Managing Director"
-              className="w-64 h-80 object-cover rounded-xl shadow-2xl border-4 border-gray-900 mx-auto mb-4"
+              className="w-64 h-80 object-cover rounded-xl shadow-2xl  border-gray-900 mx-auto mb-4"
             />
             <h3 className="text-xl font-bold text-gray-900">Mr. Yuvraj Shahi</h3>
             <p className="text-gray-700 font-medium">Managing Director / Founder</p>
@@ -73,7 +90,7 @@ function AboutUs() {
             <img
               src={MD}
               alt="Managing Director"
-              className="w-80 h-96 object-cover rounded-xl shadow-2xl border-4 border-gray-900 hover:scale-105 transition-transform duration-500"
+              className="w-80 h-96 object-cover rounded-xl shadow-2xl  border-gray-900 hover:scale-105 transition-transform duration-500"
             />
           </div>
         </div>
@@ -128,6 +145,7 @@ function AboutUs() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 
